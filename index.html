@@ -293,6 +293,25 @@
 
     footer { font-size: 12px; color: var(--muted); text-align: center; padding-top: 8px; }
 
+    /* ---------- 期权结构 ---------- */
+    .options-subtitle { font-size: 12.5px; color: var(--muted); margin: -6px 0 14px; letter-spacing: .02em; }
+    .options-status {
+      background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--positive);
+      padding: 14px 18px; margin-bottom: 12px;
+      display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-start;
+    }
+    .gamma-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .04em;
+      color: var(--positive); background: color-mix(in srgb, var(--positive) 12%, transparent);
+      border: 1px solid var(--positive); padding: 4px 10px; border-radius: 3px; white-space: nowrap; flex: none;
+    }
+    .gamma-badge::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--positive); flex: none; }
+    .options-status-text { flex: 1 1 260px; min-width: 0; }
+    .options-status-text strong { color: var(--ink); display: block; font-size: 14px; margin-bottom: 4px; }
+    .options-status-text p { margin: 0; font-size: 13px; color: var(--muted); }
+    .options-footnote { margin-top: 12px; margin-bottom: 0; }
+
     /* ---------- Responsive ---------- */
     @media (max-width: 900px) {
       .metrics { grid-template-columns: 1fr 1fr; }
@@ -335,7 +354,7 @@
     <div class="snapshot-warning"><strong>先看数据边界：</strong>分析师目标价与评级属于第三方观点，不等于事实或投资建议；借券利用率与借券费率无免费公开源，本页仅呈现 FINRA 数据并标注边界；Q3 财报日期未获公司确认；"为什么关注"为研究观点、已逐条标注。</div>
 
     <nav class="section-nav" aria-label="页面章节">
-      <a href="#market">行情</a><a href="#financials">财务</a><a href="#short">做空</a><a href="#analysts">分析师</a><a href="#events">事件雷达</a><a href="#thesis">为什么关注</a><a href="#risks">风险</a>
+      <a href="#market">行情</a><a href="#options-structure">期权结构</a><a href="#financials">财务</a><a href="#short">做空</a><a href="#analysts">分析师</a><a href="#events">事件雷达</a><a href="#thesis">为什么关注</a><a href="#risks">风险</a>
     </nav>
 
     <section class="metrics" aria-label="关键数字">
@@ -397,6 +416,31 @@
         <div class="datum"><span class="k">市值口径</span><span class="v">≈$13.89B</span><span class="k">Nasdaq 官方 API 按收盘计（$13,889,045,858）</span></div>
         <div class="datum"><span class="k">价格摘要</span><span class="v"><a class="cite" href="https://www.FinanceCharts.com/stocks/TEM/summary/price" target="_blank" rel="noreferrer">FINANCECHARTS ↗</a></span><span class="k">行情摘要第三方来源</span></div>
       </div>
+    </section>
+
+    <section class="section" id="options-structure">
+      <div class="section-head"><h2>期权结构</h2><span class="section-index">OPTIONS / STRUCTURE</span></div>
+      <p class="options-subtitle">数据截至 2026-10-01，每周更新 · 期权市场结构与做市商定位参考</p>
+
+      <div class="options-status">
+        <span class="gamma-badge">正 Gamma · 盘整/钉价倾向</span>
+        <div class="options-status-text">
+          <strong>做市商 Gamma 状态 — 正 Gamma · 盘整/钉价倾向</strong>
+          <p>正 Gamma 时做市商涨卖跌买、波动易被压缩，价格倾向盘整或向关键位钉住；负 Gamma 时做市商同向追涨杀跌，波动被放大，易走出趋势。</p>
+        </div>
+      </div>
+
+      <div class="data-grid">
+        <div class="datum"><span class="k">净做市商 GEX</span><span class="v pos">正 · +$13.9M</span><span class="k">约 +$13.9M · FlashAlpha</span></div>
+        <div class="datum"><span class="k">Call Wall</span><span class="v">$80</span><span class="k">阻力参考 · 做市商对冲密集区上沿</span></div>
+        <div class="datum"><span class="k">Put Wall</span><span class="v">$70</span><span class="k">支撑参考 · 做市商对冲密集区下沿</span></div>
+        <div class="datum"><span class="k">Max Pain</span><span class="v">$60</span><span class="k">到期日买方价值最小化价格（钉价参考）</span></div>
+        <div class="datum"><span class="k">Put-Call 未平仓比</span><span class="v">0.52</span><span class="k">Call 24.1 万张 / Put 12.6 万张 · Call-heavy</span></div>
+        <div class="datum"><span class="k">30 天 ATM IV</span><span class="v">73.8%</span><span class="k">IV Rank 59/100 · 中等</span></div>
+        <div class="datum"><span class="k">期权隐含预期波幅</span><span class="v">±$13.37</span><span class="k">±16.3% · 期权定价隐含的预期波动区间</span></div>
+      </div>
+
+      <div class="source-note options-footnote"><strong>注：</strong>数据来源 OptiView、FlashAlpha（OPRA 延迟数据）。Call/Put Wall 与 Max Pain 为做市商对冲参考位，不构成买卖建议。Gamma Flip 各模型分歧较大，本板块不列固定数值。GEX 正负基于“做市商持有与公开订单流相反头寸”的模型假设。</div>
     </section>
 
     <section class="section" id="financials">

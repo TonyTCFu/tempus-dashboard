@@ -1,0 +1,1012 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="Tempus AI（NASDAQ: TEM）研究看板：行情、期权结构、财务、空头、分析师评级与事件雷达。数据截至 2026-10-02 美股收盘。" />
+  <link rel="icon" type="image/png" sizes="180x180" href="data:image/png;base64,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" />
+  <link rel="apple-touch-icon" href="data:image/png;base64,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" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <title>Tempus AI Dashboard</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #070a0e;
+      --surface: #0d1218;
+      --surface-2: #141b23;
+      --ink: #edf2f7;
+      --muted: #9ba9b6;
+      --line: #27313b;
+      --line-strong: #45515e;
+      --accent: #38d6bd;
+      --chart: #38d6bd;
+      --chart-fill: rgba(56,214,189,.12);
+      --positive: #47c6a1;
+      --warning: #e3a84d;
+      --danger: #ff6678;
+      --tag-bg: #182230;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #eef2f5;
+        --surface: #ffffff;
+        --surface-2: #f1f5f8;
+        --ink: #0f1419;
+        --muted: #5b6a78;
+        --line: #d8e0e7;
+        --line-strong: #a9b8c4;
+        --accent: #0c9488;
+        --chart: #0c9488;
+        --chart-fill: rgba(12,148,136,.12);
+        --positive: #0f8057;
+        --warning: #a9681a;
+        --danger: #d43a4f;
+        --tag-bg: #e4ebf1;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Noto Sans SC", system-ui, -apple-system, sans-serif;
+      background:
+        linear-gradient(var(--line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line) 1px, transparent 1px),
+        var(--bg);
+      background-size: 44px 44px, 44px 44px, auto;
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    @media (prefers-color-scheme: light) { body { background-size: 44px 44px, 44px 44px, auto; opacity: 1; } }
+    .shell { max-width: 1180px; margin: 0 auto; padding: 28px 20px 60px; }
+    a { color: var(--accent); }
+    .pos { color: var(--positive); }
+    .neg { color: var(--danger); }
+
+    /* ---------- Masthead ---------- */
+    .mast {
+      display: flex; justify-content: space-between; align-items: flex-start; gap: 18px;
+      padding: 26px 26px 22px;
+      background: var(--surface); border: 1px solid var(--line);
+      border-top: 3px solid var(--accent);
+      margin-bottom: 14px;
+    }
+    .ticker {
+      font-family: "IBM Plex Mono", monospace; font-size: 11.5px; letter-spacing: .14em;
+      color: var(--accent); margin-bottom: 8px;
+    }
+    h1 {
+      font-family: "IBM Plex Sans Condensed", "Noto Sans SC", sans-serif;
+      font-size: clamp(30px, 4.6vw, 46px); font-weight: 700; margin: 0 0 8px; letter-spacing: .01em;
+    }
+    h1 .tagline { font-weight: 500; color: var(--muted); font-size: .62em; display: block; letter-spacing: .04em; }
+    .mast-note { color: var(--muted); font-size: 13.5px; max-width: 62ch; margin: 0; }
+    .asof {
+      flex: none; text-align: right; font-size: 12.5px; color: var(--muted);
+      border-left: 1px solid var(--line); padding-left: 18px;
+    }
+    .asof strong {
+      display: block; color: var(--ink); font-family: "IBM Plex Mono", monospace;
+      font-size: 13px; margin-bottom: 4px;
+    }
+
+    .snapshot-warning {
+      border: 1px solid var(--warning); border-left-width: 4px; background: var(--surface);
+      padding: 12px 16px; font-size: 13px; color: var(--ink); margin: 0 0 14px;
+    }
+    .snapshot-warning strong { color: var(--warning); }
+
+    /* ---------- Section nav ---------- */
+    .section-nav {
+      display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 18px;
+      position: sticky; top: 0; z-index: 5;
+      background: color-mix(in srgb, var(--bg) 88%, transparent);
+      padding: 8px 0; backdrop-filter: blur(6px);
+    }
+    .section-nav a {
+      text-decoration: none; font-size: 12.5px; color: var(--muted);
+      border: 1px solid var(--line); background: var(--surface);
+      padding: 6px 12px; border-radius: 3px; letter-spacing: .04em;
+    }
+    .section-nav a:hover { color: var(--accent); border-color: var(--accent); }
+
+    /* ---------- Metrics strip ---------- */
+    .metrics {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 26px;
+    }
+    .metric {
+      background: var(--surface); border: 1px solid var(--line);
+      padding: 16px 18px; min-width: 0;
+    }
+    .metric.primary { border-top: 3px solid var(--accent); }
+    .metric-label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+    .metric-value {
+      font-family: "IBM Plex Sans Condensed", "Noto Sans SC", sans-serif;
+      font-size: clamp(26px, 3vw, 36px); font-weight: 600; line-height: 1.15;
+      display: block; margin-bottom: 6px;
+    }
+    .metric-value .chg { font-size: .44em; font-weight: 600; white-space: nowrap; }
+    .metric-sub { font-size: 12px; color: var(--muted); line-height: 1.55; }
+
+    /* ---------- Price card refresh ---------- */
+    .price-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 6px; }
+    .price-head .metric-label { margin-bottom: 0; min-width: 0; }
+    #refreshQuote {
+      font-family: "IBM Plex Mono", monospace; font-size: 11.5px; letter-spacing: .04em;
+      background: var(--surface-2); color: var(--accent); border: 1px solid var(--accent);
+      padding: 5px 10px; border-radius: 3px; cursor: pointer; white-space: nowrap; flex: none;
+    }
+    #refreshQuote:hover { filter: brightness(1.18); }
+    #refreshQuote:disabled { opacity: .55; cursor: wait; }
+
+    /* ---------- Sections ---------- */
+    .section { margin-bottom: 34px; scroll-margin-top: 64px; }
+    .section-head {
+      display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
+      border-bottom: 2px solid var(--line-strong); padding-bottom: 8px; margin-bottom: 16px;
+    }
+    .section-head h2 {
+      font-family: "IBM Plex Sans Condensed", "Noto Sans SC", sans-serif;
+      font-size: 24px; margin: 0; font-weight: 600;
+    }
+    .section-index {
+      font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .16em; color: var(--muted);
+      white-space: nowrap;
+    }
+    .panel { background: var(--surface); border: 1px solid var(--line); }
+    .card { background: var(--surface); border: 1px solid var(--line); padding: 18px 20px; }
+    .card h3 { margin: 0 0 10px; font-size: 15px; font-weight: 600; }
+    .card p { margin: 8px 0; font-size: 13.5px; color: var(--muted); }
+    .card p strong { color: var(--ink); }
+    .segment-value {
+      font-family: "IBM Plex Sans Condensed", sans-serif; font-size: 30px; font-weight: 600; margin-bottom: 4px;
+    }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: start; }
+    .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; align-items: start; }
+
+    /* ---------- Data grid ---------- */
+    .data-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;
+    }
+    .datum {
+      background: var(--surface); border: 1px solid var(--line);
+      padding: 14px 16px; min-width: 0;
+    }
+    .datum .k { display: block; font-size: 11.5px; color: var(--muted); margin-bottom: 6px; line-height: 1.5; }
+    .datum .v {
+      display: block; font-family: "IBM Plex Sans Condensed", "Noto Sans SC", sans-serif;
+      font-size: 21px; font-weight: 600; line-height: 1.25; margin-bottom: 6px;
+    }
+    .datum .v small { font-size: .62em; }
+    .datum span { display: block; }
+
+    .tag {
+      display: inline-block; font-size: 11px; letter-spacing: .06em;
+      background: var(--tag-bg); color: var(--ink);
+      padding: 2px 8px; border-radius: 3px; border: 1px solid var(--line-strong);
+      font-family: "IBM Plex Mono", monospace;
+    }
+    .tag.warn { color: var(--warning); border-color: var(--warning); background: transparent; }
+    .tag.unavailable { color: var(--muted); }
+
+    .cite {
+      font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .04em;
+      color: var(--accent); text-decoration: none; white-space: nowrap;
+    }
+    .cite:hover { text-decoration: underline; }
+
+    /* ---------- Chart ---------- */
+    .chart-panel { padding: 8px 0 4px; }
+    .chart-toolbar {
+      display: flex; justify-content: space-between; align-items: center; gap: 12px;
+      padding: 10px 18px 2px; flex-wrap: wrap;
+    }
+    .chart-toolbar h3 { margin: 0; font-size: 15px; font-weight: 600; }
+    .range-switch { display: flex; gap: 6px; }
+    .range-switch button {
+      font-family: "IBM Plex Mono", monospace; font-size: 11.5px; letter-spacing: .04em;
+      background: var(--surface-2); color: var(--muted); border: 1px solid var(--line-strong);
+      padding: 5px 12px; border-radius: 3px; cursor: pointer;
+    }
+    .range-switch button[aria-pressed="true"] { color: var(--accent); border-color: var(--accent); }
+    .chart-wrap { padding: 0 8px; }
+    #priceChart { width: 100%; height: auto; display: block; cursor: crosshair; touch-action: pan-y; }
+    .chart-stats {
+      display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 18px 0;
+      font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--muted);
+    }
+    .chart-readout {
+      padding: 8px 18px 0; font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink);
+      min-height: 30px;
+    }
+    .chart-note { padding: 6px 18px 16px; font-size: 12px; color: var(--muted); }
+
+    /* ---------- Tables ---------- */
+    .plain-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .plain-table th {
+      text-align: left; font-size: 11px; letter-spacing: .08em; color: var(--muted);
+      border-bottom: 1px solid var(--line-strong); padding: 10px 8px; font-weight: 600;
+    }
+    .plain-table td { border-bottom: 1px solid var(--line); padding: 10px 8px; vertical-align: top; }
+    .plain-table tr:last-child td { border-bottom: 0; }
+    .plain-table td:nth-child(n+2) { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; }
+    .plain-table td:nth-child(2) { font-family: "IBM Plex Sans Condensed", "Noto Sans SC", sans-serif; font-size: 13px; font-weight: 500; }
+
+    /* ---------- Target ladder ---------- */
+    .pt-list { padding: 6px 0; }
+    .pt-row {
+      display: grid; grid-template-columns: 190px 1fr 130px; gap: 12px; align-items: center;
+      padding: 7px 0; border-bottom: 1px solid var(--line);
+    }
+    .pt-row:last-child { border-bottom: 0; }
+    .pt-firm { font-family: "IBM Plex Sans Condensed", "Noto Sans SC", sans-serif; font-size: 13.5px; font-weight: 500; }
+    .pt-firm em { display: block; font-style: normal; font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--muted); font-weight: 400; }
+    .pt-track { position: relative; background: var(--surface-2); height: 20px; border-radius: 2px; }
+    .pt-bar { height: 100%; background: var(--danger); opacity: .75; border-radius: 2px; }
+    .pt-bar.up { background: var(--positive); }
+    .pt-row.avg .pt-bar { background: var(--muted); opacity: .55; }
+    .pt-row.avg { background: var(--surface-2); border-radius: 4px; padding-left: 10px; padding-right: 10px; margin: 6px -10px; }
+    .pt-baseline { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--accent); }
+    .pt-val { font-family: "IBM Plex Mono", monospace; font-size: 13px; text-align: right; }
+    .pt-val em { display: block; font-style: normal; font-size: 11px; }
+    .pt-note { font-size: 12px; color: var(--muted); padding: 10px 0 4px; }
+
+    /* ---------- Events ---------- */
+    .tl-sub {
+      font-family: "IBM Plex Sans Condensed", "Noto Sans SC", sans-serif;
+      font-size: 16px; font-weight: 600; padding: 18px 18px 12px;
+      border-top: 1px solid var(--line); margin-top: 6px;
+    }
+    .tl-sub:first-child { border-top: 0; margin-top: 0; }
+    .tl-sub span { color: var(--muted); font-size: 12.5px; font-weight: 400; margin-left: 8px; }
+    .event {
+      display: grid; grid-template-columns: 130px 1fr; gap: 16px;
+      padding: 12px 18px; border-bottom: 1px solid var(--line);
+    }
+    .event:last-child { border-bottom: 0; }
+    .event-date { font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--muted); line-height: 1.7; padding-top: 2px; }
+    .event h3 { margin: 0 0 4px; font-size: 14.5px; font-weight: 600; }
+    .event p { margin: 0; font-size: 13px; color: var(--muted); }
+    .event p strong { color: var(--ink); }
+
+    /* ---------- Thesis / risks ---------- */
+    .thesis-list, .risk-list { list-style: none; margin: 0; padding: 0; }
+    .thesis-list li, .risk-list li { display: flex; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+    .thesis-list li:last-child, .risk-list li:last-child { border-bottom: 0; }
+    .thesis-list .num, .risk-list .num {
+      font-family: "IBM Plex Mono", monospace; color: var(--accent);
+      font-size: 12px; padding-top: 3px; flex: none;
+    }
+    .risk-list .num { color: var(--danger); }
+    .thesis-list h4, .risk-list h4 { margin: 0 0 4px; font-size: 14px; font-weight: 600; }
+    .thesis-list p, .risk-list p { margin: 0; font-size: 13px; color: var(--muted); }
+    .view-flag { font-size: 11px; color: var(--warning); border: 1px solid var(--warning); padding: 1px 7px; border-radius: 3px; white-space: nowrap; margin-left: 8px; }
+
+    .source-note {
+      background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent);
+      padding: 14px 18px; font-size: 12.5px; color: var(--muted); margin-bottom: 22px;
+    }
+    .source-note strong { color: var(--ink); }
+
+    footer { font-size: 12px; color: var(--muted); text-align: center; padding-top: 8px; }
+
+    /* ---------- 期权结构 ---------- */
+    .options-subtitle { font-size: 12.5px; color: var(--muted); margin: -6px 0 14px; letter-spacing: .02em; }
+    .options-status {
+      background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--positive);
+      padding: 14px 18px; margin-bottom: 12px;
+      display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-start;
+    }
+    .gamma-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .04em;
+      color: var(--positive); background: color-mix(in srgb, var(--positive) 12%, transparent);
+      border: 1px solid var(--positive); padding: 4px 10px; border-radius: 3px; white-space: nowrap; flex: none;
+    }
+    .gamma-badge::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--positive); flex: none; }
+    .options-status-text { flex: 1 1 260px; min-width: 0; }
+    .options-status-text strong { color: var(--ink); display: block; font-size: 14px; margin-bottom: 4px; }
+    .options-status-text p { margin: 0; font-size: 13px; color: var(--muted); }
+    .options-footnote { margin-top: 12px; margin-bottom: 0; }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 900px) {
+      .metrics { grid-template-columns: 1fr 1fr; }
+      .data-grid { grid-template-columns: 1fr 1fr; }
+      .two-col, .three-col { grid-template-columns: 1fr; }
+      .mast { flex-direction: column; }
+      .asof { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; padding-top: 12px; text-align: left; width: 100%; }
+    }
+    @media (max-width: 640px) {
+      .shell { padding: 16px 12px 48px; }
+      .metrics { grid-template-columns: 1fr; }
+      .data-grid { grid-template-columns: 1fr; }
+      .pt-row { grid-template-columns: 1fr 96px; }
+      .pt-firm { grid-column: 1 / -1; }
+      .pt-track { grid-row: 2; }
+      .pt-val { grid-row: 2; }
+      .pt-row.avg { margin: 6px 0; }
+      .event { grid-template-columns: 1fr; gap: 4px; }
+      .plain-table thead { display: none; }
+      .plain-table, .plain-table tbody, .plain-table tr, .plain-table td { display: block; width: 100%; }
+      .plain-table tr { border-bottom: 1px solid var(--line-strong); padding: 6px 0; }
+      .plain-table td { border: 0; padding: 4px 0; font-size: 12.5px; }
+      .plain-table td::before { content: attr(data-label); display: inline-block; width: 38%; color: var(--muted); font-size: 11px; font-family: "Noto Sans SC", sans-serif; }
+      .section-nav { position: static; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="mast">
+      <div>
+        <div class="ticker">NASDAQ · TEM / RESEARCH SNAPSHOT</div>
+        <h1>Tempus AI<span class="tagline">AI 精准医疗 · Tempus AI, Inc.（TEM）</span></h1>
+        <p class="mast-note">价格卡可手动刷新实时行情（美东交易时段打开时自动刷新一次）；行情截至 2026-10-02（美东），财务、做空、分析师与事件为静态研究快照，其余数字均按旁注日期与口径呈现，来源标注于每个数字之下。</p>
+      </div>
+      <div class="asof"><strong>数据快照 · 2026-10-02</strong>美股收盘 · ET · USD<br />调研日期 2026-10-03</div>
+    </header>
+
+    <div class="snapshot-warning"><strong>先看数据边界：</strong>分析师目标价与评级属于第三方观点，不等于事实或投资建议；借券利用率与借券费率无免费公开源，本页仅呈现 FINRA 数据并标注边界；Q3 财报日期未获公司确认；"为什么关注"为研究观点、已逐条标注。</div>
+
+    <nav class="section-nav" aria-label="页面章节">
+      <a href="#market">行情</a><a href="#options-structure">期权结构</a><a href="#financials">财务</a><a href="#short">做空</a><a href="#analysts">分析师</a><a href="#events">事件雷达</a><a href="#thesis">为什么关注</a><a href="#risks">风险</a>
+    </nav>
+
+    <section class="metrics" aria-label="关键数字">
+      <article class="metric primary">
+        <div class="price-head">
+          <span class="metric-label">实时行情 <span class="tag unavailable" id="quoteStateTag">收盘 · 静态快照</span></span>
+          <button type="button" id="refreshQuote">↻ 刷新实时行情</button>
+        </div>
+        <span class="metric-value"><span id="quotePrice">$76.63</span> <span class="chg pos" id="quoteChg">+$0.13 · +0.17%</span></span>
+        <div class="metric-sub" id="quoteMeta">报价 2026-10-02 16:00 ET · 收盘 · 较前收盘 $76.50（2026-10-01）· 来源 Nasdaq 官方 API（静态快照）</div>
+      </article>
+      <article class="metric">
+        <span class="metric-label">市值 · 2026-10-02</span>
+        <span class="metric-value">≈$13.8B</span>
+        <div class="metric-sub">按 2026-10-02 收盘计 · Nasdaq 官方 API</div>
+      </article>
+      <article class="metric">
+        <span class="metric-label">空头仓位 · 2026-09-15</span>
+        <span class="metric-value">28.06M</span>
+        <div class="metric-sub">占流通盘 20.53% · 高空头比例 · <a class="cite" href="http://marketbeat.com/stocks/NASDAQ/TEM/short-interest/" target="_blank" rel="noreferrer">FINRA / MARKETBEAT ↗</a></div>
+      </article>
+      <article class="metric">
+        <span class="metric-label">分析师共识 · 目标价均值</span>
+        <span class="metric-value">Hold <span class="chg" style="font-size:.44em">≈$71.05</span></span>
+        <div class="metric-sub">覆盖 22 家（11 Buy / 9 Hold / 2 Sell）· 现价 $76.63 高于目标价均值 · <a class="cite" href="https://www.MarketBeat.com/stocks/NASDAQ/TEM/forecast/" target="_blank" rel="noreferrer">MARKETBEAT ↗</a></div>
+      </article>
+    </section>
+
+    <section class="section" id="market">
+      <div class="section-head"><h2>股价表现</h2><span class="section-index">01 / MARKET</span></div>
+
+      <div class="three-col" style="margin-bottom:12px">
+        <article class="card"><h3>公司</h3><div class="segment-value">Tempus AI</div><p>成立于 2015 年；2024 年 6 月纳斯达克上市；员工约 3,800 人。AI 精准医疗公司。</p></article>
+        <article class="card"><h3>CEO</h3><div class="segment-value" style="font-size:24px">Eric Lefkofsky</div><p>9 月按 10b5-1 预先安排计划售股约 45 万股（见事件雷达），非即兴抛售信号</p></article>
+        <article class="card"><h3>双引擎商业模式</h3><div class="segment-value" style="font-size:22px">(1) 诊断 (2) 数据授权</div><p><strong style="color:var(--ink)">Genomics / Diagnostics：</strong>肿瘤基因组检测等诊断产品，积累去标识化临床与分子数据。<br /><strong style="color:var(--ink)">Data &amp; Applications / Insights：</strong>向药企授权数据与 AI 模型、开发 AI 诊断产品。</p></article>
+      </div>
+
+      <div class="panel chart-panel">
+        <div class="chart-toolbar">
+          <h3>TEM 日收盘价 · USD · 2026-07-02 至 2026-10-02</h3>
+          <div class="range-switch" aria-label="图表区间">
+            <button type="button" data-range="all" aria-pressed="true">全部</button>
+            <button type="button" data-range="1m" aria-pressed="false">近 1 个月</button>
+          </div>
+        </div>
+        <div class="chart-wrap"><svg id="priceChart" viewBox="0 0 960 360" role="img" aria-label="TEM 自 2026 年 7 月 2 日至 10 月 2 日的每日收盘价折线图，标注关键事件"></svg></div>
+        <div class="chart-stats" id="chartStats"></div>
+        <div class="chart-readout" id="chartReadout">移动指针查看日期与收盘价</div>
+        <div class="chart-note">纵轴按可见数据范围缩放，非零基线；日期按真实时间间隔绘制（周末空档可见）。65 个交易日 · Nasdaq 官方 API。<a class="cite" href="http://stockanalysis.com/stocks/tem/history/" target="_blank" rel="noreferrer">PRICE HISTORY ↗</a></div>
+      </div>
+
+      <div class="data-grid" style="margin-top:12px">
+        <div class="datum"><span class="k">开盘 / 最高 / 最低</span><span class="v">$76.50 / $80.31 / $75.80</span><span class="k">2026-10-02 · Nasdaq 官方 API</span></div>
+        <div class="datum"><span class="k">成交量</span><span class="v">约 5.69M 股</span><span class="k">2026-10-02 · Nasdaq 官方 API</span></div>
+        <div class="datum"><span class="k">52 周区间</span><span class="v">$40.77 – $104.32</span><span class="k">低点 2026-07-28 · 高点 2025-10-09 · Nasdaq 官方 API</span></div>
+        <div class="datum"><span class="k">流通股数</span><span class="v">≈180.43M 股</span><span class="k">marketbeat</span></div>
+        <div class="datum"><span class="k">前收盘</span><span class="v">$76.50</span><span class="k">2026-10-01 收盘 · Nasdaq 官方 API</span></div>
+        <div class="datum"><span class="k">当日涨跌</span><span class="v pos">+$0.13 · +0.17%</span><span class="k">截至 2026-10-02 16:00 ET · 前一日 -6.59%，当日初步企稳 · Nasdaq 官方 API</span></div>
+        <div class="datum"><span class="k">市值口径</span><span class="v">≈$13.8B</span><span class="k">Nasdaq 官方 API 按 2026-10-02 收盘计</span></div>
+        <div class="datum"><span class="k">价格摘要</span><span class="v"><a class="cite" href="https://www.FinanceCharts.com/stocks/TEM/summary/price" target="_blank" rel="noreferrer">FINANCECHARTS ↗</a></span><span class="k">行情摘要第三方来源</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="options-structure">
+      <div class="section-head"><h2>期权结构</h2><span class="section-index">OPTIONS / STRUCTURE</span></div>
+      <p class="options-subtitle">数据截至 FlashAlpha 2026-10-02 15:37 ET 快照 · OptiView 2026-10-01 15:55 ET（尚未滚动）· 两源日期分别标注、不做混合 · 期权市场结构与做市商定位参考</p>
+
+      <div class="options-status">
+        <span class="gamma-badge">正 Gamma · 盘整/钉价倾向</span>
+        <div class="options-status-text">
+          <strong>做市商 Gamma 状态 — 正 Gamma · 盘整/钉价倾向</strong>
+          <p>正 Gamma 时做市商涨卖跌买、波动易被压缩，价格倾向盘整或向关键位钉住；负 Gamma 时做市商同向追涨杀跌，波动被放大，易走出趋势。</p>
+        </div>
+      </div>
+
+      <div class="data-grid">
+        <div class="datum"><span class="k">净做市商 GEX</span><span class="v pos">正 · ≈+$13.2M</span><span class="k">FlashAlpha 2026-10-02 15:37 ET 快照</span></div>
+        <div class="datum"><span class="k">Call Wall</span><span class="v">$80</span><span class="k">阻力参考 · 做市商对冲密集区上沿 · FlashAlpha 2026-10-02</span></div>
+        <div class="datum"><span class="k">Put Wall</span><span class="v">$77</span><span class="k">支撑参考 · 做市商对冲密集区下沿 · FlashAlpha 2026-10-02</span></div>
+        <div class="datum"><span class="k">Max Pain</span><span class="v">$61</span><span class="k">到期日买方价值最小化价格（钉价参考）· OptiView 2026-10-01</span></div>
+        <div class="datum"><span class="k">Put-Call 未平仓比</span><span class="v">0.52</span><span class="k">Call 244,720 张 / Put 127,307 张 · Call-heavy · OptiView 2026-10-01</span></div>
+        <div class="datum"><span class="k">30 天 ATM IV</span><span class="v">69.0%</span><span class="k">FlashAlpha 2026-10-02 15:37 ET · OptiView（2026-10-01）口径 78.4%、IV Rank 47/100</span></div>
+        <div class="datum"><span class="k">期权隐含预期波幅</span><span class="v">±$16.88</span><span class="k">±22.1% · 期权定价隐含的预期波动区间 · OptiView 2026-10-01</span></div>
+      </div>
+
+      <div class="source-note options-footnote"><strong>注：</strong>数据来源分两套：FlashAlpha 2026-10-02 15:37 ET 快照（GEX、Call/Put Wall、ATM IV）与 OptiView 2026-10-01 15:55 ET（未平仓量、Max Pain、预期波幅、IV Rank），均为 OPRA 延迟数据；OptiView 尚未滚动至 10-02，日期分别标注、不做混合。Call/Put Wall 与 Max Pain 为做市商对冲参考位，不构成买卖建议。Gamma Flip 各模型分歧较大，本板块不列固定数值。GEX 正负基于“做市商持有与公开订单流相反头寸”的模型假设。</div>
+    </section>
+
+    <section class="section" id="financials">
+      <div class="section-head"><h2>财务表现 · 2026 Q2</h2><span class="section-index">02 / FINANCIALS</span></div>
+      <div class="data-grid">
+        <div class="datum"><span class="k">Q2 营收</span><span class="v">$382.5M <small class="pos">+22% YoY</small></span><span class="k">财报发布 2026-07-30 · 超预期的 $379.69M</span></div>
+        <div class="datum"><span class="k">Diagnostics（诊断）</span><span class="v">$289.3M <small class="pos">+20% YoY</small></span><span class="k">肿瘤学检测量 +31% · Q2 2026</span></div>
+        <div class="datum"><span class="k">Data &amp; Applications</span><span class="v">$93.2M <small class="pos">+28% YoY</small></span><span class="k">其中数据授权与建模 +36% · Q2 2026</span></div>
+        <div class="datum"><span class="k">毛利润 / 毛利率</span><span class="v">$246.5M / 64.4%</span><span class="k">毛利润同比 +26% · Q2 2026</span></div>
+        <div class="datum"><span class="k">净利润（GAAP）</span><span class="v pos">+$5.6M</span><span class="k">首次季度 GAAP 盈利；去年同期净亏损 $42.8M · Q2 2026</span></div>
+        <div class="datum"><span class="k">调整后 EBITDA</span><span class="v pos">+$8.0M</span><span class="k">去年同期 −$5.6M · Q2 2026</span></div>
+        <div class="datum"><span class="k">现金及可交易证券</span><span class="v">$820.7M</span><span class="k">截至 2026-06-30</span></div>
+        <div class="datum"><span class="k">2026 全年指引（上调后）</span><span class="v">$1.59–1.60B</span><span class="k">营收约 +25% · 调整后 EBITDA 约 $65M</span></div>
+      </div>
+      <article class="card" style="margin-top:12px">
+        <h3>Q2 披露的战略里程碑</h3>
+        <p><strong>向 AstraZeneca 交付首版肿瘤基础模型；与 BioNTech 签署多年期数据授权协议；与 AstraZeneca、Merck、GSK 等药企的数据授权合同，每家金额超 $1 亿美元。</strong></p>
+        <p>Q2 财务数据来源：公司 2026-07-30 财报新闻稿（经 MarketBeat 报道）<a class="cite" href="https://markets.financialcontent.com/theeveningleader/article/bizwire-2026-7-30-tempus-reports-second-quarter-2026-results" target="_blank" rel="noreferrer">EARNINGS RELEASE ↗</a> · 季度趋势另可参考 <a class="cite" href="https://altindex.com/ticker/tem/earnings" target="_blank" rel="noreferrer">ALTINDEX ↗</a></p>
+      </article>
+    </section>
+
+    <section class="section" id="short">
+      <div class="section-head"><h2>做空数据</h2><span class="section-index">03 / SHORT</span></div>
+      <div class="data-grid">
+        <div class="datum"><span class="k">Short interest</span><span class="v">28,059,350 股</span><span class="k">结算日 2026-09-15 · FINRA，经 MarketBeat 汇总</span></div>
+        <div class="datum"><span class="k">空头变化（半月）</span><span class="v pos">−4.77%</span><span class="k">上期 29,464,296 股 · 截至 2026-09-15 · FINRA</span></div>
+        <div class="datum"><span class="k">Short % of float</span><span class="v">20.53%</span><span class="k">高空头比例 · 截至 2026-09-15 · MarketBeat</span></div>
+        <div class="datum"><span class="k">Days to cover</span><span class="v">5.2 天</span><span class="k">截至 2026-09-15 · FINRA / MarketBeat</span></div>
+        <div class="datum"><span class="k">空头美元市值</span><span class="v">≈$1.93B</span><span class="k">截至 2026-09-15 · FINRA / MarketBeat</span></div>
+        <div class="datum"><span class="k">借券利用率 / 借券费率</span><span class="v"><span class="tag unavailable">无免费公开源</span></span><span class="k">无法查证 · 本页仅呈现 FINRA 数据，不估算费率</span></div>
+      </div>
+      <div class="source-note" style="margin-top:12px"><strong>数据边界：</strong>FINRA 最新已发布空头报告的结算日为 2026-09-15，09-30 结算报告尚未发布。借券利用率与实时借券费率无免费公开数据源，无法呈现或估算，实际做空成本以券商实时 locate 报价为准。<a class="cite" href="http://marketbeat.com/stocks/NASDAQ/TEM/short-interest/" target="_blank" rel="noreferrer">MARKETBEAT SHORT INTEREST ↗</a></div>
+    </section>
+
+    <section class="section" id="analysts">
+      <div class="section-head"><h2>分析师评级</h2><span class="section-index">04 / ANALYSTS</span></div>
+      <div class="data-grid" style="margin-bottom:12px">
+        <div class="datum"><span class="k">评级共识</span><span class="v">Hold</span><span class="k">覆盖 22 家（11 Buy / 9 Hold / 2 Sell）</span></div>
+        <div class="datum"><span class="k">平均目标价</span><span class="v">≈$71.05</span><span class="k">当前 $76.63，高出均值约 +7.9%</span></div>
+        <div class="datum"><span class="k">预期差提示</span><span class="v neg">现价高于均值</span><span class="k">10-01 大跌 -6.59% 后于 10-02 以 $76.63 企稳，仍高于均值 $71.05；评级多发布于 9 月大幅波动前后，更新可能滞后</span></div>
+        <div class="datum"><span class="k">来源</span><span class="v"><a class="cite" href="https://www.MarketBeat.com/stocks/NASDAQ/TEM/forecast/" target="_blank" rel="noreferrer">MARKETBEAT FORECAST ↗</a></span><span class="k">目标价与评级聚合</span></div>
+      </div>
+      <div class="panel" style="padding:2px 18px 10px">
+        <div class="tl-sub" style="border-top:0;margin-top:0;padding-top:16px">目标价 ladder<span>基准：2026-10-02 收盘 $76.63（青色竖线）· 涨跌幅相对现价计算</span></div>
+        <div class="pt-list">
+          <div class="pt-row"><span class="pt-firm">Mizuho<em>Outperform · 首次覆盖 2026-02-19</em></span><div class="pt-track"><div class="pt-bar up" style="width:100%"></div><div class="pt-baseline" style="left:76.63%"></div></div><span class="pt-val">$100<em class="pos">+30.5%</em></span></div>
+          <div class="pt-row"><span class="pt-firm">Cantor Fitzgerald<em>Overweight · 首次覆盖 2026-09-02</em></span><div class="pt-track"><div class="pt-bar up" style="width:80%"></div><div class="pt-baseline" style="left:76.63%"></div></div><span class="pt-val">$80<em class="pos">+4.4%</em></span></div>
+          <div class="pt-row"><span class="pt-firm">Raymond James<em>2026-09-02</em></span><div class="pt-track"><div class="pt-bar up" style="width:80%"></div><div class="pt-baseline" style="left:76.63%"></div></div><span class="pt-val">$80<em class="pos">+4.4%</em></span></div>
+          <div class="pt-row"><span class="pt-firm">Canaccord Genuity<em>Buy · 目标价 $95→$80 · 2025-12-22</em></span><div class="pt-track"><div class="pt-bar up" style="width:80%"></div><div class="pt-baseline" style="left:76.63%"></div></div><span class="pt-val">$80<em class="pos">+4.4%</em></span></div>
+          <div class="pt-row"><span class="pt-firm">BTIG<em>Buy · 目标价 $70→$80 · 2026-08-20</em></span><div class="pt-track"><div class="pt-bar up" style="width:80%"></div><div class="pt-baseline" style="left:76.63%"></div></div><span class="pt-val">$80<em class="pos">+4.4%</em></span></div>
+          <div class="pt-row"><span class="pt-firm">Piper Sandler<em>Neutral→Overweight · $56→$76 · 2026-09-01</em></span><div class="pt-track"><div class="pt-bar" style="width:76%"></div><div class="pt-baseline" style="left:76.63%"></div></div><span class="pt-val">$76<em class="neg">-0.8%</em></span></div>
+          <div class="pt-row"><span class="pt-firm">Goldman Sachs<em>Neutral · 首次覆盖 2026-09-21</em></span><div class="pt-track"><div class="pt-bar" style="width:75%"></div><div class="pt-baseline" style="left:76.63%"></div></div><span class="pt-val">$75<em class="neg">-2.1%</em></span></div>
+          <div class="pt-row"><span class="pt-firm">Needham<em>Buy</em></span><div class="pt-track"><div class="pt-bar" style="width:75%"></div><div class="pt-baseline" style="left:76.63%"></div></div><span class="pt-val">$75<em class="neg">-2.1%</em></span></div>
+          <div class="pt-row"><span class="pt-firm">UBS<em>Neutral · 首次覆盖 2026-09-09</em></span><div class="pt-track"><div class="pt-bar" style="width:70%"></div><div class="pt-baseline" style="left:76.63%"></div></div><span class="pt-val">$70<em class="neg">-8.7%</em></span></div>
+          <div class="pt-row"><span class="pt-firm">Bank of America<em>Neutral · 目标价 $68→$70 · 2025-06-25</em></span><div class="pt-track"><div class="pt-bar" style="width:70%"></div><div class="pt-baseline" style="left:76.63%"></div></div><span class="pt-val">$70<em class="neg">-8.7%</em></span></div>
+          <div class="pt-row"><span class="pt-firm">Morgan Stanley<em>Overweight · 目标价 $85→$70 · 2026-03-03</em></span><div class="pt-track"><div class="pt-bar" style="width:70%"></div><div class="pt-baseline" style="left:76.63%"></div></div><span class="pt-val">$70<em class="neg">-8.7%</em></span></div>
+          <div class="pt-row avg"><span class="pt-firm">分析师目标价均值<em>聚合均值（所有覆盖投行）</em></span><div class="pt-track"><div class="pt-bar" style="width:71.05%"></div><div class="pt-baseline" style="left:76.63%"></div></div><span class="pt-val">$71.05<em class="neg">-7.3%</em></span></div>
+          <div class="pt-row"><span class="pt-firm">Rothschild &amp; Co Redburn<em>Neutral · 首次覆盖 2026-09-08</em></span><div class="pt-track"><div class="pt-bar" style="width:67%"></div><div class="pt-baseline" style="left:76.63%"></div></div><span class="pt-val">$67<em class="neg">-12.6%</em></span></div>
+          <div class="pt-row"><span class="pt-firm">Roth Capital<em>Neutral · 首次覆盖 2026-09-08</em></span><div class="pt-track"><div class="pt-bar" style="width:67%"></div><div class="pt-baseline" style="left:76.63%"></div></div><span class="pt-val">$67<em class="neg">-12.6%</em></span></div>
+          <div class="pt-row"><span class="pt-firm">HC Wainwright<em>Buy · 目标价 $56→$66 · 2026-09-11</em></span><div class="pt-track"><div class="pt-bar" style="width:66%"></div><div class="pt-baseline" style="left:76.63%"></div></div><span class="pt-val">$66<em class="neg">-13.9%</em></span></div>
+          <div class="pt-row"><span class="pt-firm">Guggenheim<em>Buy · 目标价 $60→$65 · 2026-07-16</em></span><div class="pt-track"><div class="pt-bar" style="width:65%"></div><div class="pt-baseline" style="left:76.63%"></div></div><span class="pt-val">$65<em class="neg">-15.2%</em></span></div>
+          <div class="pt-row"><span class="pt-firm">JPMorgan<em>Neutral · 目标价 $80→$60 · 2026-02-25</em></span><div class="pt-track"><div class="pt-bar" style="width:60%"></div><div class="pt-baseline" style="left:76.63%"></div></div><span class="pt-val">$60<em class="neg">-21.7%</em></span></div>
+          <div class="pt-row"><span class="pt-firm">Robert W. Baird<em>Outperform · 首次覆盖 2026-02-17</em></span><div class="pt-track"><div class="pt-bar" style="width:59%"></div><div class="pt-baseline" style="left:76.63%"></div></div><span class="pt-val">$59<em class="neg">-23.0%</em></span></div>
+          <div class="pt-row"><span class="pt-firm">Stifel<em>Hold · 目标价下调至 $50 · 2026-08-03</em></span><div class="pt-track"><div class="pt-bar" style="width:50%"></div><div class="pt-baseline" style="left:76.63%"></div></div><span class="pt-val">$50<em class="neg">-34.8%</em></span></div>
+          <div class="pt-row"><span class="pt-firm">Jefferies<em>Underperform · 首次覆盖 2026-04-13</em></span><div class="pt-track"><div class="pt-bar" style="width:35%"></div><div class="pt-baseline" style="left:76.63%"></div></div><span class="pt-val">$35<em class="neg">-54.3%</em></span></div>
+        </div>
+        <div class="pt-note">条形按目标价相对 $100（最高）缩放，零基线；灰色行为目标价均值。评级与动作日期按公开报道整理。<a class="cite" href="https://www.MarketBeat.com/stocks/NASDAQ/TEM/forecast/" target="_blank" rel="noreferrer">SOURCE ↗</a></div>
+        <div class="tl-sub">近期评级动作一览<span>按时间倒序 · 完整 20 条（末两条日期未明）</span></div>
+        <div style="padding:0 0 14px">
+          <table class="plain-table">
+            <thead><tr><th>日期</th><th>投行</th><th>动作</th><th>评级</th><th>目标价</th></tr></thead>
+            <tbody>
+              <tr><td data-label="日期">2026-09-21</td><td data-label="投行">Goldman Sachs</td><td data-label="动作">首次覆盖</td><td data-label="评级">Neutral</td><td data-label="目标价">$75</td></tr>
+              <tr><td data-label="日期">2026-09-11</td><td data-label="投行">HC Wainwright</td><td data-label="动作">上调</td><td data-label="评级">Buy</td><td data-label="目标价">$56→$66</td></tr>
+              <tr><td data-label="日期">2026-09-09</td><td data-label="投行">UBS</td><td data-label="动作">首次覆盖</td><td data-label="评级">Neutral</td><td data-label="目标价">$70</td></tr>
+              <tr><td data-label="日期">2026-09-08</td><td data-label="投行">Rothschild &amp; Co Redburn</td><td data-label="动作">首次覆盖</td><td data-label="评级">Neutral</td><td data-label="目标价">$67</td></tr>
+              <tr><td data-label="日期">2026-09-08</td><td data-label="投行">Roth Capital</td><td data-label="动作">首次覆盖</td><td data-label="评级">Neutral</td><td data-label="目标价">$67</td></tr>
+              <tr><td data-label="日期">2026-09-02</td><td data-label="投行">Cantor Fitzgerald</td><td data-label="动作">首次覆盖</td><td data-label="评级">Overweight</td><td data-label="目标价">$80</td></tr>
+              <tr><td data-label="日期">2026-09-02</td><td data-label="投行">Raymond James</td><td data-label="动作">—</td><td data-label="评级">—</td><td data-label="目标价">$80</td></tr>
+              <tr><td data-label="日期">2026-09-01</td><td data-label="投行">Piper Sandler</td><td data-label="动作">上调</td><td data-label="评级">Neutral→Overweight</td><td data-label="目标价">$56→$76</td></tr>
+              <tr><td data-label="日期">2026-08-20</td><td data-label="投行">BTIG</td><td data-label="动作">上调</td><td data-label="评级">Buy</td><td data-label="目标价">$70→$80</td></tr>
+              <tr><td data-label="日期">2026-08-03</td><td data-label="投行">Stifel</td><td data-label="动作">下调目标价</td><td data-label="评级">Hold</td><td data-label="目标价">$50</td></tr>
+              <tr><td data-label="日期">2026-07-16</td><td data-label="投行">Guggenheim</td><td data-label="动作">上调</td><td data-label="评级">Buy</td><td data-label="目标价">$60→$65</td></tr>
+              <tr><td data-label="日期">2026-04-13</td><td data-label="投行">Jefferies</td><td data-label="动作">首次覆盖</td><td data-label="评级">Underperform</td><td data-label="目标价">$35</td></tr>
+              <tr><td data-label="日期">2026-03-03</td><td data-label="投行">Morgan Stanley</td><td data-label="动作">下调目标价</td><td data-label="评级">Overweight</td><td data-label="目标价">$85→$70</td></tr>
+              <tr><td data-label="日期">2026-02-25</td><td data-label="投行">JPMorgan</td><td data-label="动作">下调目标价</td><td data-label="评级">Neutral</td><td data-label="目标价">$80→$60</td></tr>
+              <tr><td data-label="日期">2026-02-19</td><td data-label="投行">Mizuho</td><td data-label="动作">首次覆盖</td><td data-label="评级">Outperform</td><td data-label="目标价">$100</td></tr>
+              <tr><td data-label="日期">2026-02-17</td><td data-label="投行">Robert W. Baird</td><td data-label="动作">首次覆盖</td><td data-label="评级">Outperform</td><td data-label="目标价">$59</td></tr>
+              <tr><td data-label="日期">2025-12-22</td><td data-label="投行">Canaccord Genuity</td><td data-label="动作">下调目标价</td><td data-label="评级">Buy</td><td data-label="目标价">$95→$80</td></tr>
+              <tr><td data-label="日期">2025-06-25</td><td data-label="投行">Bank of America</td><td data-label="动作">上调目标价</td><td data-label="评级">Neutral</td><td data-label="目标价">$68→$70</td></tr>
+              <tr><td data-label="日期">日期未明</td><td data-label="投行">Needham</td><td data-label="动作">—</td><td data-label="评级">Buy</td><td data-label="目标价">$75</td></tr>
+              <tr><td data-label="日期">日期未明</td><td data-label="投行">Lake Street</td><td data-label="动作">—</td><td data-label="评级">Hold</td><td data-label="目标价">—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="events">
+      <div class="section-head"><h2>事件雷达</h2><span class="section-index">05 / EVENT RADAR</span></div>
+      <div class="panel" style="padding:0">
+        <div class="tl-sub">即将到来</div>
+        <article class="event">
+          <div class="event-date">预计约 2026-11-03<br /><span class="tag warn">公司未确认</span></div>
+          <div><h3>Q3 2026 财报（预计盘后）</h3><p>OptiView 预计约 2026-11-03 盘后；公司尚未公布确切日期（Zacks 等此前估计 11 月初，TipRanks、stockevents 曾标注 11-10），各来源口径不一，以公司公告为准。</p></div>
+        </article>
+        <article class="event">
+          <div class="event-date">预计 2026 年末<br />或 2027 年初</div>
+          <div><h3>Personalis 收购交割</h3><p>约 $15 亿美元收购（每股 $16.25，多为股票支付）；交割仍<strong>待股东与监管批准</strong>，时间表可能变动。来源：barrons.com（2026-07 报道）。9/15 公司向 SEC 提交的 Rule 425 文件披露了 Lefkofsky 在会议上对交易经济逻辑的说明：Personalis 检测量环比 +33%，MRD 市场规模约 $200 亿美元；交割待股东与监管批准，协议终止日为 2027-04-20。来源：SEC 425 文件（经 stocktitan / chartlibrary 报道）。</p></div>
+        </article>
+        <article class="event">
+          <div class="event-date">预计 2027<br />下半年</div>
+          <div><h3>液态活检产品 FDA 批准（CEO 预期）</h3><p>若获批，液态活检定价有望从约 $3,200 升至 <strong>$7,000 中高区间</strong>；批准时间以 FDA 实际进度为准，存在推迟可能。</p></div>
+        </article>
+
+        <div class="tl-sub">近期已发生<span>2026-07 至 2026-10 · 按时间倒序</span></div>
+        <article class="event">
+          <div class="event-date">2026-10-02<br /><span class="tag">PRICE</span></div>
+          <div><h3>9 月大涨后 10 月初回落，10-02 初步企稳</h3><p>9 月近 30 日累计约 <strong>+23.7%</strong>；10-01 单日 <strong>-6.59%</strong> 收 $76.50（ARK 减持等抛压），10-02 小幅收涨 <strong>+0.17%</strong> 收 $76.63，成交量回落至约 5.69M 股。来源：Nasdaq 官方 API。</p></div>
+        </article>
+        <article class="event">
+          <div class="event-date">2026-10-01<br /><span class="tag">FUNDS</span></div>
+          <div><h3>ARK Invest 通过 ARKK 减持 128,292 股</h3><p>ARK Invest 经 ARKK ETF 减持 128,292 股 TEM，当日 TEM 大跌 6.6% 收 $76.50，为当日主要抛压来源之一。来源：tradersunion.com（经 TradingView 行情）。</p></div>
+        </article>
+        <article class="event">
+          <div class="event-date">2026-09-28<br /><span class="tag">FDA</span></div>
+          <div><h3>ECG-MR 获 FDA 510(k) 批准</h3><p>AI 心电图识别二尖瓣反流获批，为 Tempus <strong>第四个心血管 AI 产品</strong>。来源：公司公告（经 securities.io 报道）。</p></div>
+        </article>
+        <article class="event">
+          <div class="event-date">2026-09-21<br /><span class="tag">PARTNERSHIP</span></div>
+          <div><h3>Recursion Pharmaceuticals 数据合作延长至 2029-11</h3><p>延长数据合作三年，并获得其 RNA 基础模型 TxFM 的<strong>非独家授权</strong>。来源：公司公告（Business Wire，经 morningstar 转载）。</p></div>
+        </article>
+        <article class="event">
+          <div class="event-date">2026-09-17<br />2026-09-22<br /><span class="tag">INSIDER</span></div>
+          <div><h3>CEO Lefkofsky 按 10b5-1 计划售股（合计约 $3,548 万）</h3><p>9/17 售 20 万股、均价 $80.57；9/22 售 25 万股、均价 $77.47。系<strong>预先安排的交易计划</strong>，不宜解读为看空信号。来源：thestockobserver.com。</p></div>
+        </article>
+        <article class="event">
+          <div class="event-date">2026-09-15–17<br /><span class="tag">+15%</span></div>
+          <div><h3>Morgan Stanley 全球医疗大会：CEO 公布 Medicare 报销预期</h3><p>组织检测预期 $80–100M、液态活检 $250–300M；消息带动单日 <strong>+15%</strong>，五日累计约 <strong>+36–40%</strong>。来源：barrons.com。</p></div>
+        </article>
+        <article class="event">
+          <div class="event-date">2026-09-01–21<br /><span class="tag">ANALYSTS</span></div>
+          <div><h3>分析师密集覆盖</h3><p>Piper Sandler 上调至 Overweight / $76、Cantor Fitzgerald 首次 Overweight / $80、UBS 首次 Neutral / $70、Goldman Sachs 首次 Neutral / $75 等。来源：thestockobserver.com。</p></div>
+        </article>
+        <article class="event">
+          <div class="event-date">2026-08-25<br />2026-09-01<br /><span class="tag">FUNDS</span></div>
+          <div><h3>ARK Invest 减持</h3><p>8/25 卖出 57,819 股；9/1 卖出 250,062 股、约 <strong>$1,560 万</strong>。来源：aistockwire.com。</p></div>
+        </article>
+        <article class="event">
+          <div class="event-date">2026-08-24<br /><span class="tag">FDA</span></div>
+          <div><h3>ECG-PH 获 FDA 510(k) 批准</h3><p>AI 心电图识别肺动脉高压获批，为<strong>第三个心血管 AI 产品</strong>。当日股价反应<strong>各来源口径不一，不做定论</strong>。来源：securities.io。</p></div>
+        </article>
+        <article class="event">
+          <div class="event-date">2026-08-19–21<br /><span class="tag">SECTOR</span></div>
+          <div><h3>精准医疗板块联动：TEM 单周 +39.5%</h3><p>Moderna / Merck 个性化癌症疫苗 III 期成功带动板块：<strong>8/19 +24.09%</strong>、8/20 +8.82%、8/21 +9.06%。<strong>行业事件联动，非公司自身消息。</strong> 来源：ts2.tech。</p></div>
+        </article>
+        <article class="event">
+          <div class="event-date">2026-07-30<br /><span class="tag">EARNINGS</span></div>
+          <div><h3>Q2 财报超预期并上调全年指引</h3><p>营收 $382.5M（+22%）、<strong>首次季度 GAAP 盈利 $5.6M</strong>，全年指引上调至营收 $1.59–1.60B。来源：公司 8-K / MarketBeat。</p></div>
+        </article>
+        <article class="event">
+          <div class="event-date">2026-07-29<br /><span class="tag">52-WK LOW</span></div>
+          <div><h3>收 $41.55，触及 52 周收盘低点</h3><p>市场对 Personalis 收购稀释的担忧导致此前连续走弱，当日以 52 周收盘新低收官（次日 Q2 财报后反转走高）。来源：barrons.com。</p></div>
+        </article>
+        <article class="event">
+          <div class="event-date">2026-07-20<br /><span class="tag">M&amp;A</span></div>
+          <div><h3>宣布以约 $15 亿美元收购癌症检测公司 Personalis</h3><p>每股 $16.25，<strong>多为股票支付</strong>；市场担忧稀释，公告后股价承压。来源：barrons.com。</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="thesis">
+      <div class="section-head"><h2>为什么关注<span class="view-flag">观点 · 非事实</span></h2><span class="section-index">06 / THESIS</span></div>
+      <article class="card">
+        <ul class="thesis-list">
+          <li><span class="num">01</span><div><h4>AI 精准医疗龙头：诊断检测 → 数据飞轮 → 药企授权<span class="view-flag">观点</span></h4><p>基因组检测持续积累数据资产，数据授权业务毛利率高、增速快（Data &amp; Applications +28%，其中数据授权与建模 +36%）。</p></div></li>
+          <li><span class="num">02</span><div><h4>首次 GAAP 盈利 + 上调指引，商业化进入拐点<span class="view-flag">观点</span></h4><p>Q2 2026 净利润 +$5.6M（去年同期 −$42.8M）、调整后 EBITDA +$8.0M，盈利与指引同步改善。</p></div></li>
+          <li><span class="num">03</span><div><h4>FDA 心血管 AI 产品矩阵（4 个 510(k)），监管执行力强<span class="view-flag">观点</span></h4><p>2026 年 8 月 ECG-PH、9 月 ECG-MR 相继获批，AI 诊断产品管线加速上市。</p></div></li>
+          <li><span class="num">04</span><div><h4>高空头比例（20.53%）+ 基本面改善，存在空头回补空间<span class="view-flag">观点 · 请谨慎解读</span></h4><p>该判断依赖空头仓位持续下降与基本面兑现；高空头本身也可视为分歧加剧的来源。</p></div></li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section" id="risks">
+      <div class="section-head"><h2>主要风险</h2><span class="section-index">07 / RISKS</span></div>
+      <article class="card">
+        <ul class="risk-list">
+          <li><span class="num">01</span><div><h4>股价仍高于分析师平均目标价（$76.63 vs ≈$71.05）</h4><p>评级更新可能滞后于 9 月以来的大幅波动；高于均值部分存在预期差风险，10-01 单日 -6.59% 后于 10-02 企稳（+0.17%），仅部分消化。</p></div></li>
+          <li><span class="num">02</span><div><h4>Personalis 收购的股票支付结构带来稀释担忧</h4><p>约 $15 亿美元收购多为股票支付，交割前（预计 2026 年末或 2027 年初）不确定性持续。</p></div></li>
+          <li><span class="num">03</span><div><h4>数据授权业务依赖药企大客户续约</h4><p>Goldman Sachs 指出中期合同续约不确定性；AstraZeneca、Merck、GSK 等大客户续约进度待跟踪。</p></div></li>
+          <li><span class="num">04</span><div><h4>盈利基础尚不牢固，持续高投入</h4><p>研发与销售投入持续高企，Q2 刚实现首次季度 GAAP 盈利，连续盈利能力待验证。</p></div></li>
+          <li><span class="num">05</span><div><h4>液态活检等产品仍待 FDA 批准，时间表可能推迟</h4><p>2027 年下半年获批仅为 CEO 预期；批准进度与报销落地存在不确定性。</p></div></li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="source-note"><strong>研究完整性（数据基准日 2026-10-02，调研日期 2026-10-03）：</strong>2026-10-02 开 / 高 / 低 / 收为 $76.50 / $80.31 / $75.80 / $76.63，成交量约 5.69M 股，市值约 $13.8B（Nasdaq 官方 API）；52 周低点 $40.77（2026-07-28）/ 高点 $104.32（2025-10-09）为 Nasdaq 官方口径，图表收盘序列内最低收盘为 2026-07-29 的 $41.55。图表与图内统计直接按机器可读日收盘序列（Nasdaq 官方 API，65 个交易日，截至 2026-10-02）绘制。期权板块中 FlashAlpha 为 2026-10-02 15:37 ET 快照、OptiView 为 2026-10-01 15:55 ET（未平仓量等指标尚未滚动），日期分别标注、不做混合。Q3 2026 财报日期未获公司确认（OptiView 预计约 2026-11-03 盘后）。ECG-PH 获批当日股价反应各来源口径不一，未做定论。借券利用率与费率无免费公开源，未呈现也未估算。</section>
+
+    <footer>价格卡可刷新实时报价；其余为截至 2026-10-02 美股收盘的静态研究快照（财务、做空沿用既有已发布口径），不构成证券研究报告或投资建议。引用链接打开第三方原始页面。</footer>
+  </main>
+
+  <script>
+    (function () {
+      // 日收盘序列（Nasdaq 官方 API，65 个交易日，截至 2026-10-02），按调研目录机器可读序列逐字录入。
+      var data = [['2026-07-02',60.27],['2026-07-06',60.70],['2026-07-07',60.09],['2026-07-08',57.27],['2026-07-09',61.50],['2026-07-10',58.23],['2026-07-13',55.93],['2026-07-14',58.67],['2026-07-15',57.25],['2026-07-16',53.59],['2026-07-17',52.47],['2026-07-20',48.41],['2026-07-21',48.98],['2026-07-22',46.96],['2026-07-23',46.01],['2026-07-24',42.69],['2026-07-27',42.91],['2026-07-28',42.90],['2026-07-29',41.55],['2026-07-30',44.29],['2026-07-31',43.87],['2026-08-03',46.05],['2026-08-04',47.05],['2026-08-05',46.70],['2026-08-06',46.12],['2026-08-07',52.05],['2026-08-10',55.06],['2026-08-11',55.69],['2026-08-12',54.61],['2026-08-13',54.29],['2026-08-14',52.10],['2026-08-17',51.64],['2026-08-18',49.36],['2026-08-19',61.25],['2026-08-20',66.65],['2026-08-21',72.69],['2026-08-24',66.17],['2026-08-25',68.73],['2026-08-26',68.48],['2026-08-27',70.69],['2026-08-28',64.04],['2026-08-31',63.05],['2026-09-01',62.27],['2026-09-02',61.94],['2026-09-03',64.66],['2026-09-04',64.62],['2026-09-08',64.29],['2026-09-09',61.28],['2026-09-10',58.74],['2026-09-11',59.01],['2026-09-14',62.21],['2026-09-15',68.85],['2026-09-16',69.97],['2026-09-17',80.36],['2026-09-18',77.84],['2026-09-21',78.03],['2026-09-22',77.19],['2026-09-23',76.59],['2026-09-24',82.24],['2026-09-25',85.01],['2026-09-28',85.08],['2026-09-29',82.58],['2026-09-30',81.90],['2026-10-01',76.50],['2026-10-02',76.63]];
+      var svg = document.getElementById('priceChart');
+      var readout = document.getElementById('chartReadout');
+      var stats = document.getElementById('chartStats');
+      var buttons = document.querySelectorAll('[data-range]');
+      var markers = [
+        {d:'2026-07-20', label:'收购 Personalis'},
+        {d:'2026-07-30', label:'Q2 财报超预期'},
+        {d:'2026-08-19', label:'板块联动 +39.5%'},
+        {d:'2026-09-17', label:'Medicare 报销预期'},
+        {d:'2026-09-28', label:'ECG-MR 获批'},
+        {d:'2026-10-01', label:'ARK 减持·-6.6%'},
+        {d:'2026-10-02', label:'企稳 +0.17%'}
+      ];
+      var active = 'all', visible = data, state = null;
+      function parseDate(v) { return new Date(v + 'T00:00:00Z').getTime(); }
+      function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+      function text(x, y, value, anchor, size, color) {
+        return '<text x="'+x+'" y="'+y+'" text-anchor="'+(anchor||'start')+'" fill="'+(color||'var(--muted)')+'" font-family="IBM Plex Mono, monospace" font-size="'+(size||11)+'">'+esc(value)+'</text>';
+      }
+      function render() {
+        visible = active === '1m' ? data.slice(-22) : data.slice();
+        var W=960, H=360, l=64, r=18, t=48, b=42;
+        var times = visible.map(function (d){ return parseDate(d[0]); });
+        var vals = visible.map(function (d){ return d[1]; });
+        var minT = Math.min.apply(null,times), maxT = Math.max.apply(null,times);
+        var minV = Math.min.apply(null,vals), maxV = Math.max.apply(null,vals);
+        var pad = Math.max((maxV-minV)*.10, 2);
+        var yMin = minV-pad, yMax = maxV+pad;
+        function x(i){ return l + (times[i]-minT)/((maxT-minT)||1) * (W-l-r); }
+        function y(v){ return t + (yMax-v)/(yMax-yMin) * (H-t-b); }
+        var path = visible.map(function (d,i){ return (i?'L':'M')+x(i).toFixed(2)+','+y(d[1]).toFixed(2); }).join(' ');
+        var area = path+' L '+x(visible.length-1).toFixed(2)+','+(H-b)+' L '+x(0).toFixed(2)+','+(H-b)+' Z';
+        var idx = {}; visible.forEach(function (d,i){ idx[d[0]] = i; });
+        var out = '<defs><linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--chart)" stop-opacity=".28"/><stop offset="100%" stop-color="var(--chart)" stop-opacity="0"/></linearGradient></defs>';
+        // y gridlines
+        for (var j=0;j<5;j++){
+          var tv = yMin+(yMax-yMin)*(4-j)/4, yy = t+(H-t-b)*j/4;
+          out += '<line x1="'+l+'" y1="'+yy+'" x2="'+(W-r)+'" y2="'+yy+'" stroke="var(--line)" stroke-width="1"/>';
+          out += text(l-10, yy+4, '$'+Math.round(tv), 'end');
+        }
+        // x ticks
+        var ticks = [0, Math.floor((visible.length-1)/3), Math.floor((visible.length-1)*2/3), visible.length-1];
+        ticks.forEach(function (i,k){
+          var a = k===0?'start':(k===3?'end':'middle');
+          out += text(x(i), H-14, visible[i][0].slice(5), a);
+        });
+        // event markers (相邻标注文字框重叠时，上方标注抬升一层避免压字)
+        var prevBox = null;
+        function labelW(s) { var w = 0; for (var ci = 0; ci < s.length; ci++) { w += s.charCodeAt(ci) > 0x2E7F ? 10.4 : 6.3; } return w; }
+        markers.forEach(function (m, k){
+          if (!(m.d in idx)) return;
+          var i = idx[m.d], px = x(i), py = y(visible[i][1]);
+          var a = (k===markers.length-1) ? 'end' : 'middle';
+          var lx = (a==='end') ? Math.min(px+2, W-r) : px;
+          var w = labelW(m.label);
+          var box = (a==='end') ? [lx-w, lx] : [lx-w/2, lx+w/2];
+          var level = (prevBox && box[0] < prevBox[1] + 4) ? 2 : 1;
+          out += '<line x1="'+px+'" y1="'+(level===2 ? t-26 : t-14)+'" x2="'+px+'" y2="'+py+'" stroke="var(--line-strong)" stroke-width="1" stroke-dasharray="4 3" opacity=".8"/>';
+          out += '<circle cx="'+px+'" cy="'+py+'" r="3.4" fill="var(--warning)" stroke="var(--surface)" stroke-width="1.2"/>';
+          out += text(lx, level===2 ? t-32 : t-20, m.label, a, 10.5);
+          prevBox = box;
+        });
+        out += '<path d="'+area+'" fill="url(#areaFill)"/>';
+        out += '<path d="'+path+'" fill="none" stroke="var(--chart)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>';
+        // min / max dots (computed from visible data)
+        var iMin=0, iMax=0;
+        vals.forEach(function (v,i){ if (v<vals[iMin]) iMin=i; if (v>vals[iMax]) iMax=i; });
+        out += '<circle cx="'+x(iMin)+'" cy="'+y(vals[iMin])+'" r="4" fill="var(--danger)" stroke="var(--surface)" stroke-width="1.6"/>';
+        out += '<circle cx="'+x(iMax)+'" cy="'+y(vals[iMax])+'" r="4" fill="var(--chart)" stroke="var(--surface)" stroke-width="1.6"/>';
+        out += text(Math.min(x(iMin)-8, W-r-44), y(vals[iMin])+18, '$'+vals[iMin].toFixed(2), 'end', 10.5, 'var(--danger)');
+        out += text(Math.max(x(iMax)-8, l), y(vals[iMax])-12, '$'+vals[iMax].toFixed(2), 'end', 10.5, 'var(--chart)');
+        out += '<line id="cursorLine" x1="0" x2="0" y1="'+t+'" y2="'+(H-b)+'" stroke="var(--line-strong)" stroke-width="1" opacity="0"/>';
+        out += '<circle id="cursorDot" cx="0" cy="0" r="5" fill="var(--surface)" stroke="var(--chart)" stroke-width="3" opacity="0"/>';
+        svg.innerHTML = out;
+        state = {W:W,l:l,r:r,t:t,b:b,minT:minT,maxT:maxT,y:y,x:x};
+        // stats line (computed from visible data)
+        var low = visible[iMin], high = visible[iMax];
+        var first = visible[0][1], last = visible[visible.length-1][1];
+        var chg = (last-first)/first*100;
+        var sign = chg >= 0 ? '+' : '';
+        stats.innerHTML = '<span>交易日 '+visible.length+'</span>' +
+          '<span>收盘低 <b style="color:var(--danger)">$'+low[1].toFixed(2)+' · '+low[0].slice(2)+'</b></span>' +
+          '<span>收盘高 <b style="color:var(--chart)">$'+high[1].toFixed(2)+' · '+high[0].slice(2)+'</b></span>' +
+          '<span>首尾变化 <b class="'+(chg>=0?'pos':'neg')+'">'+sign+chg.toFixed(1)+'%</b></span>';
+        svg.setAttribute('aria-label','TEM 自 '+visible[0][0]+' 至 '+visible[visible.length-1][0]+' 每日收盘价折线图：收盘低 $'+low[1].toFixed(2)+'（'+low[0]+'），收盘高 $'+high[1].toFixed(2)+'（'+high[0]+'），首尾变化 '+sign+chg.toFixed(1)+'%');
+      }
+      function onMove(evt) {
+        if (!state) return;
+        var rect = svg.getBoundingClientRect();
+        var clientX = evt.touches ? evt.touches[0].clientX : evt.clientX;
+        var px = (clientX - rect.left) * state.W / rect.width;
+        var frac = (px - state.l) / (state.W - state.l - state.r);
+        var target = state.minT + frac * (state.maxT - state.minT);
+        var best = 0, bestD = Infinity;
+        for (var i=0;i<visible.length;i++){
+          var d = Math.abs(parseDate(visible[i][0]) - target);
+          if (d < bestD){ bestD = d; best = i; }
+        }
+        var cx = state.x(best), cy = state.y(visible[best][1]);
+        var line = svg.querySelector('#cursorLine'), dot = svg.querySelector('#cursorDot');
+        if (line && dot){
+          line.setAttribute('x1',cx); line.setAttribute('x2',cx); line.setAttribute('opacity','1');
+          dot.setAttribute('cx',cx); dot.setAttribute('cy',cy); dot.setAttribute('opacity','1');
+        }
+        var prev = best > 0 ? visible[best-1][1] : null;
+        var dl = '';
+        if (prev != null){
+          var dch = ((visible[best][1]-prev)/prev*100);
+          dl = ' · '+(dch>=0?'+':'')+dch.toFixed(2)+'%';
+        }
+        readout.textContent = visible[best][0]+'  收盘 $'+visible[best][1].toFixed(2)+dl;
+      }
+      function onLeave() {
+        var line = svg.querySelector('#cursorLine'), dot = svg.querySelector('#cursorDot');
+        if (line) line.setAttribute('opacity','0');
+        if (dot) dot.setAttribute('opacity','0');
+        readout.textContent = '移动指针查看日期与收盘价';
+      }
+      svg.addEventListener('mousemove', onMove);
+      svg.addEventListener('mouseleave', onLeave);
+      svg.addEventListener('touchstart', onMove, {passive:true});
+      svg.addEventListener('touchmove', onMove, {passive:true});
+      svg.addEventListener('touchend', onLeave);
+      for (var bi=0; bi<buttons.length; bi++){
+        buttons[bi].addEventListener('click', function () {
+          active = this.getAttribute('data-range');
+          for (var k=0;k<buttons.length;k++){ buttons[k].setAttribute('aria-pressed', buttons[k]===this ? 'true' : 'false'); }
+          onLeave(); render();
+        });
+      }
+      render();
+    })();
+  </script>
+
+  <!-- 实时行情刷新：quote.json 快照 → Nasdaq 直连 → Yahoo → Stooq（tem.us） -->
+  <script>
+    (function () {
+      /* ===== 实时行情刷新（仅更新价格卡；财务/做空/分析师/事件保持静态快照） =====
+         quote.json 标准格式（由 GitHub Actions 每 15 分钟依据 Nasdaq 官方 API 写入本页同目录）：
+         { "symbol":"TEM", "price":82.15, "netChange":0.25, "pctChange":0.31,
+           "prevClose":81.90, "quoteTime":"2026-10-01 12:05", "status":"intraday", "source":"Nasdaq" }
+         字段宽容：price 也可叫 lastSalePrice；pctChange 也可叫 percentageChange；
+         quoteTime 也可叫 quoteTimeET / lastTradeTimestamp；status 接受 intraday/close/premarket/postmarket。 */
+      var btn = document.getElementById('refreshQuote');
+      var tag = document.getElementById('quoteStateTag');
+      var priceEl = document.getElementById('quotePrice');
+      var chgEl = document.getElementById('quoteChg');
+      var metaEl = document.getElementById('quoteMeta');
+      if (!btn) return;
+
+      function numOf(x) {
+        if (typeof x === 'number') return x;
+        if (typeof x === 'string') {
+          var n = parseFloat(x.replace(/[$,\s%]/g, ''));
+          return isNaN(n) ? NaN : n;
+        }
+        return NaN;
+      }
+      function fetchWithTimeout(url, timeoutMs) {
+        var ctrl = new AbortController();
+        var finished = false;
+        return new Promise(function (resolve, reject) {
+          var to = setTimeout(function () {
+            if (!finished) { finished = true; ctrl.abort(); reject(new Error('timeout')); }
+          }, timeoutMs || 9000);
+          fetch(url, { cache: 'no-store', signal: ctrl.signal }).then(function (res) {
+            if (finished) return;
+            finished = true; clearTimeout(to);
+            res.ok ? resolve(res) : reject(new Error('HTTP ' + res.status));
+          }).catch(function (e) {
+            if (!finished) { finished = true; clearTimeout(to); reject(e); }
+          });
+        });
+      }
+      function fetchJson(url, t) { return fetchWithTimeout(url, t).then(function (r) { return r.json(); }); }
+      function fetchText(url, t) { return fetchWithTimeout(url, t).then(function (r) { return r.text(); }); }
+
+      function etParts(d) {
+        var parts = new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', weekday: 'short', hour12: false }).formatToParts(d);
+        var o = {};
+        parts.forEach(function (p) { o[p.type] = p.value; });
+        return o;
+      }
+      function etDateTime(d) {
+        var o = etParts(d);
+        return o.year + '-' + o.month + '-' + o.day + ' ' + o.hour + ':' + o.minute;
+      }
+      function inMarketHours() {
+        var o = etParts(new Date());
+        if (o.weekday === 'Sat' || o.weekday === 'Sun') return false;
+        var mins = parseInt(o.hour, 10) * 60 + parseInt(o.minute, 10);
+        return mins >= 570 && mins <= 960; // 美东周一至周五 9:30–16:00
+      }
+      function statusFromClock() { return inMarketHours() ? 'intraday' : 'close'; }
+      function statusText(s) {
+        return s === 'intraday' ? '盘中' : (s === 'close' ? '收盘' : (s === 'premarket' ? '盘前' : (s === 'postmarket' ? '盘后' : (s || '—'))));
+      }
+      function cleanCSV(s) { return String(s || '').replace(/"/g, '').trim(); }
+
+      /* 开盘时段（美东周一至周五 9:30–16:00）快照新鲜度检查：quote.json 时间戳不是美东今天、
+         或距当前美东时间已超过 30 分钟（含时间戳缺失/无法解析）→ 视为过期，抛错让刷新链
+         继续走 Nasdaq 直连 → Yahoo → Stooq，不直接渲染旧快照；非开盘时段不检查，收盘快照照常显示。 */
+      function assertFreshSnapshot(rawTime) {
+        if (!inMarketHours()) return;
+        var nowO = etParts(new Date());
+        var today = nowO.year + '-' + nowO.month + '-' + nowO.day;
+        var nowMin = parseInt(nowO.hour, 10) * 60 + parseInt(nowO.minute, 10);
+        var qDate = null, qMin = null;
+        if (typeof rawTime === 'number' && isFinite(rawTime) && rawTime > 0) {
+          var qo = etParts(new Date(rawTime > 1e11 ? rawTime : rawTime * 1000));
+          qDate = qo.year + '-' + qo.month + '-' + qo.day;
+          qMin = parseInt(qo.hour, 10) * 60 + parseInt(qo.minute, 10);
+        } else if (typeof rawTime === 'string') {
+          var s = rawTime.trim();
+          var m = s.match(/^(\d{4})-(\d{2})-(\d{2})[T ](\d{1,2}):(\d{2})(?::\d{2}(?:\.\d+)?)?$/);
+          if (m) { // 无时区后缀：quoteTime 按美东墙钟时间写入，直接与美东当前时间比较
+            qDate = m[1] + '-' + m[2] + '-' + m[3];
+            qMin = parseInt(m[4], 10) * 60 + parseInt(m[5], 10);
+          } else {
+            var ms = Date.parse(s);
+            if (!isNaN(ms)) {
+              var po = etParts(new Date(ms));
+              qDate = po.year + '-' + po.month + '-' + po.day;
+              qMin = parseInt(po.hour, 10) * 60 + parseInt(po.minute, 10);
+            }
+          }
+        }
+        if (!qDate || qDate !== today || qMin == null || nowMin - qMin > 30) throw new Error('quote.json stale');
+      }
+
+      /* --- 1) quote.json（GitHub Actions 定时快照，同目录） --- */
+      function loadQuoteJson() {
+        return fetchJson('quote.json?v=' + Date.now(), 8000).then(function (j) {
+          var price = numOf(j.price != null ? j.price : j.lastSalePrice);
+          if (isNaN(price)) throw new Error('quote.json empty');
+          var rawTime = j.quoteTime || j.quoteTimeET || j.lastTradeTimestamp;
+          assertFreshSnapshot(rawTime); // 开盘时段快照过期 → 抛错，刷新链走后续降级源
+          var net = numOf(j.netChange);
+          var pct = numOf(j.pctChange != null ? j.pctChange : j.percentageChange);
+          var prev = numOf(j.prevClose);
+          if (isNaN(pct) && !isNaN(net) && !isNaN(prev) && prev) pct = net / prev * 100;
+          if (isNaN(net) && !isNaN(pct) && !isNaN(prev) && prev) net = prev * pct / 100;
+          return {
+            price: price, netChange: net, pctChange: pct, prevClose: prev,
+            time: rawTime || etDateTime(new Date()),
+            status: j.status || j.marketStatus || statusFromClock(),
+            source: (j.source || 'Nasdaq') + ' · GitHub 定时拉取'
+          };
+        });
+      }
+      /* --- 2) Nasdaq 官方 API 直连 --- */
+      function loadNasdaq() {
+        return fetchJson('https://api.nasdaq.com/api/quote/TEM/info?assetclass=stocks', 9000).then(function (j) {
+          var d = (j && j.data) || {};
+          var price = numOf(d.lastSalePrice);
+          if (isNaN(price)) throw new Error('nasdaq empty');
+          return {
+            price: price, netChange: numOf(d.netChange), pctChange: numOf(d.percentageChange),
+            prevClose: NaN, time: etDateTime(new Date()), status: statusFromClock(),
+            source: 'Nasdaq 官方 API（直连）'
+          };
+        });
+      }
+      /* --- 3) Yahoo Finance --- */
+      function loadYahoo() {
+        return fetchJson('https://query1.finance.yahoo.com/v8/finance/chart/TEM?range=1d&interval=1d', 9000).then(function (j) {
+          var m = (j && j.chart && j.chart.result && j.chart.result[0] && j.chart.result[0].meta) || {};
+          var price = numOf(m.regularMarketPrice);
+          if (isNaN(price)) throw new Error('yahoo empty');
+          var prev = numOf(m.chartPreviousClose != null ? m.chartPreviousClose : m.previousClose);
+          var net = isNaN(prev) ? NaN : price - prev;
+          var pct = isNaN(net) || !prev ? NaN : net / prev * 100;
+          var ts = m.regularMarketTime ? new Date(m.regularMarketTime * 1000) : new Date();
+          var st = { REGULAR: 'intraday', PREMARKET: '盘前', POSTMARKET: '盘后', CLOSED: 'close' }[m.marketState];
+          return {
+            price: price, netChange: net, pctChange: pct, prevClose: prev,
+            time: etDateTime(ts), status: st || statusFromClock(), source: 'Yahoo Finance（直连）'
+          };
+        });
+      }
+      /* --- 4) Stooq（tem.us）：即时报价 + 日线近两根 K 计算涨跌 --- */
+      function loadStooq() {
+        return fetchText('https://stooq.com/q/l/?s=tem.us&f=sd2t2ohlcv&h&e=csv', 9000).then(function (csv) {
+          var rows = csv.trim().split(/\r?\n/);
+          if (rows.length < 2) throw new Error('stooq empty');
+          var f = rows[rows.length - 1].split(',');
+          // Stooq f=sd2t2ohlcv 列序：0=Symbol, 1=Date, 2=Time, 3=Open, 4=High, 5=Low, 6=Close, 7=Volume
+          var qDate = cleanCSV(f[1]), price = numOf(cleanCSV(f[6]));
+          if (!qDate || isNaN(price)) throw new Error('stooq no quote');
+          var quote = {
+            price: price, netChange: NaN, pctChange: NaN, prevClose: NaN,
+            time: qDate + ' ' + cleanCSV(f[2]).slice(0, 5),
+            status: statusFromClock(), source: 'Stooq（tem.us 直连）'
+          };
+          return fetchText('https://stooq.com/q/d/l/?s=tem.us&i=d', 9000).then(function (daily) {
+            var dr = daily.trim().split(/\r?\n/).filter(function (l) { return l && l.indexOf('Date') !== 0; });
+            var todayRow = null, prevRow = null;
+            dr.forEach(function (l) {
+              var c = l.split(','), d = cleanCSV(c[0]);
+              if (d === qDate) todayRow = c;
+              else if (d < qDate) prevRow = c; // ISO 日期可直接比较
+            });
+            var c2 = prevRow ? numOf(cleanCSV(prevRow[4])) : NaN;
+            if (!inMarketHours() && todayRow) {
+              var c1 = numOf(cleanCSV(todayRow[4]));
+              if (!isNaN(c1)) { quote.price = c1; quote.time = qDate + ' 16:00'; quote.status = 'close'; }
+            }
+            if (!isNaN(c2) && c2) {
+              quote.prevClose = c2;
+              quote.netChange = quote.price - c2;
+              quote.pctChange = (quote.price - c2) / c2 * 100;
+            }
+            return quote;
+          }).catch(function () { return quote; }); // 日线失败也不影响价格展示
+        });
+      }
+
+      function render(q) {
+        priceEl.textContent = '$' + q.price.toFixed(2);
+        if (!isNaN(q.pctChange)) {
+          var up = q.pctChange >= 0;
+          var netTxt = isNaN(q.netChange) ? '' : (up ? '+' : '') + q.netChange.toFixed(2) + ' · ';
+          chgEl.textContent = netTxt + (up ? '+' : '') + q.pctChange.toFixed(2) + '%';
+          chgEl.className = 'chg ' + (up ? 'pos' : 'neg');
+        } else {
+          chgEl.textContent = '—';
+          chgEl.className = 'chg';
+        }
+        var stx = statusText(q.status);
+        tag.textContent = stx + ' · 已刷新';
+        tag.className = 'tag' + (q.status === 'intraday' ? ' warn' : '');
+        metaEl.textContent = '报价 ' + (q.time || '—') + ' ET · ' + stx +
+          (isNaN(q.prevClose) ? '' : ' · 较前收盘 $' + q.prevClose.toFixed(2)) +
+          ' · 来源 ' + q.source;
+      }
+
+      function tryChain(sources) {
+        if (!sources.length) return Promise.reject(new Error('all sources failed'));
+        return sources[0]().catch(function () { return tryChain(sources.slice(1)); });
+      }
+      function refreshQuote(silent) {
+        if (btn.disabled) return;
+        btn.disabled = true;
+        var label = btn.textContent;
+        if (!silent) btn.textContent = '⟳ 正在刷新…';
+        function done() { btn.disabled = false; btn.textContent = label; }
+        tryChain([loadQuoteJson, loadNasdaq, loadYahoo, loadStooq]).then(function (q) {
+          render(q); done();
+        }, function () {
+          if (!silent) { // 静默刷新失败不打扰用户，只保留静态快照
+            tag.textContent = '刷新失败';
+            tag.className = 'tag unavailable';
+            metaEl.textContent = 'quote.json / Nasdaq / Yahoo / Stooq 均不可达，已保留上一报价 · 点击再试一次';
+          }
+          done();
+        });
+      }
+
+      btn.addEventListener('click', function () { refreshQuote(false); });
+      if (inMarketHours()) refreshQuote(true); // 美东开盘时段自动静默刷新一次
+    })();
+  </script>
+</body>
+</html>

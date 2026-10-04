@@ -420,7 +420,7 @@
 
     <section class="section" id="options-structure">
       <div class="section-head"><h2>期权结构</h2><span class="section-index">OPTIONS / STRUCTURE</span></div>
-      <p class="options-subtitle">数据截至 FlashAlpha 2026-10-02 15:37 ET 快照 · OptiView 2026-10-01 15:55 ET（尚未滚动）· 两源日期分别标注、不做混合 · 期权市场结构与做市商定位参考</p>
+      <p class="options-subtitle">数据截至 FlashAlpha 2026-10-02 15:37 ET 快照 · OptiView 2026-10-02 · 两源日期分别标注、不做混合 · 期权市场结构与做市商定位参考</p>
 
       <div class="options-status">
         <span class="gamma-badge">正 Gamma · 盘整/钉价倾向</span>
@@ -434,13 +434,18 @@
         <div class="datum"><span class="k">净做市商 GEX</span><span class="v pos">正 · ≈+$13.2M</span><span class="k">FlashAlpha 2026-10-02 15:37 ET 快照</span></div>
         <div class="datum"><span class="k">Call Wall</span><span class="v">$80</span><span class="k">阻力参考 · 做市商对冲密集区上沿 · FlashAlpha 2026-10-02</span></div>
         <div class="datum"><span class="k">Put Wall</span><span class="v">$77</span><span class="k">支撑参考 · 做市商对冲密集区下沿 · FlashAlpha 2026-10-02</span></div>
-        <div class="datum"><span class="k">Max Pain</span><span class="v">$61</span><span class="k">到期日买方价值最小化价格（钉价参考）· OptiView 2026-10-01</span></div>
-        <div class="datum"><span class="k">Put-Call 未平仓比</span><span class="v">0.52</span><span class="k">Call 244,720 张 / Put 127,307 张 · Call-heavy · OptiView 2026-10-01</span></div>
-        <div class="datum"><span class="k">30 天 ATM IV</span><span class="v">69.0%</span><span class="k">FlashAlpha 2026-10-02 15:37 ET · OptiView（2026-10-01）口径 78.4%、IV Rank 47/100</span></div>
-        <div class="datum"><span class="k">期权隐含预期波幅</span><span class="v">±$16.88</span><span class="k">±22.1% · 期权定价隐含的预期波动区间 · OptiView 2026-10-01</span></div>
+        <div class="datum"><span class="k">Max Pain（全部到期日口径）</span><span class="v">$65</span><span class="k">距 10/2 收盘 −15.2% · 到期日买方价值最小化价格（钉价参考）· OptiView 2026-10-02</span></div>
+        <div class="datum"><span class="k">Put-Call 未平仓比</span><span class="v">0.52</span><span class="k">Call 未平仓 249,564 张 · Put 未平仓 129,542 张 · Call-heavy · OptiView 2026-10-02</span></div>
+        <div class="datum"><span class="k">30 天 ATM IV</span><span class="v">69.0%</span><span class="k">FlashAlpha 2026-10-02 15:37 ET · OptiView ATM IV 70.8%、IV Rank 45/100 · OptiView 2026-10-02</span></div>
+        <div class="datum"><span class="k">期权隐含预期波幅</span><span class="v">±$13.01</span><span class="k">约 ±17.0% · 期权定价隐含的预期波动区间 · OptiView 2026-10-02</span></div>
       </div>
 
-      <div class="source-note options-footnote"><strong>注：</strong>数据来源分两套：FlashAlpha 2026-10-02 15:37 ET 快照（GEX、Call/Put Wall、ATM IV）与 OptiView 2026-10-01 15:55 ET（未平仓量、Max Pain、预期波幅、IV Rank），均为 OPRA 延迟数据；OptiView 尚未滚动至 10-02，日期分别标注、不做混合。Call/Put Wall 与 Max Pain 为做市商对冲参考位，不构成买卖建议。Gamma Flip 各模型分歧较大，本板块不列固定数值。GEX 正负基于“做市商持有与公开订单流相反头寸”的模型假设。</div>
+      <div class="two-col" style="margin-top:12px">
+        <div class="datum"><span class="k">现价位置（10/2 收盘 vs Wall）</span><span class="k">收盘 $76.63，Put Wall $77 在上方约 0.5%（收盘微破下墙，支撑待确认）；Call Wall $80 在上方约 4.4%</span></div>
+        <div class="datum"><span class="k">成交异动（OptiView 2026-10-02）</span><span class="k">当日成交最热行权价 $70；全链成交量 / 未平仓量比 0.49</span></div>
+      </div>
+
+      <div class="source-note options-footnote"><strong>注：</strong>数据来源分两套：FlashAlpha 2026-10-02 15:37 ET 快照（GEX、Call/Put Wall、ATM IV）与 OptiView 2026-10-02（未平仓量、Max Pain、预期波幅、IV Rank），均为 OPRA 延迟数据；日期分别标注、不做混合。Call/Put Wall 与 Max Pain 为做市商对冲参考位，不构成买卖建议。Max Pain 为全部到期日合约口径，包含远月合约，数值通常低于最近到期口径，两者不可直接比较。Gamma Flip 各模型分歧较大，本板块不列固定数值。GEX 正负基于“做市商持有与公开订单流相反头寸”的模型假设。</div>
     </section>
 
     <section class="section" id="financials">
@@ -637,7 +642,7 @@
       </article>
     </section>
 
-    <section class="source-note"><strong>研究完整性（数据基准日 2026-10-02，调研日期 2026-10-03）：</strong>2026-10-02 开 / 高 / 低 / 收为 $76.50 / $80.31 / $75.80 / $76.63，成交量约 5.69M 股，市值约 $13.8B（Nasdaq 官方 API）；52 周低点 $40.77（2026-07-28）/ 高点 $104.32（2025-10-09）为 Nasdaq 官方口径，图表收盘序列内最低收盘为 2026-07-29 的 $41.55。图表与图内统计直接按机器可读日收盘序列（Nasdaq 官方 API，65 个交易日，截至 2026-10-02）绘制。期权板块中 FlashAlpha 为 2026-10-02 15:37 ET 快照、OptiView 为 2026-10-01 15:55 ET（未平仓量等指标尚未滚动），日期分别标注、不做混合。Q3 2026 财报日期未获公司确认（OptiView 预计约 2026-11-03 盘后）。ECG-PH 获批当日股价反应各来源口径不一，未做定论。借券利用率与费率无免费公开源，未呈现也未估算。</section>
+    <section class="source-note"><strong>研究完整性（数据基准日 2026-10-02，调研日期 2026-10-03）：</strong>2026-10-02 开 / 高 / 低 / 收为 $76.50 / $80.31 / $75.80 / $76.63，成交量约 5.69M 股，市值约 $13.8B（Nasdaq 官方 API）；52 周低点 $40.77（2026-07-28）/ 高点 $104.32（2025-10-09）为 Nasdaq 官方口径，图表收盘序列内最低收盘为 2026-07-29 的 $41.55。图表与图内统计直接按机器可读日收盘序列（Nasdaq 官方 API，65 个交易日，截至 2026-10-02）绘制。期权板块中 FlashAlpha 为 2026-10-02 15:37 ET 快照、OptiView 为 2026-10-02 15:55 ET，日期分别标注、不做混合。Q3 2026 财报日期未获公司确认（OptiView 预计约 2026-11-03 盘后）。ECG-PH 获批当日股价反应各来源口径不一，未做定论。借券利用率与费率无免费公开源，未呈现也未估算。</section>
 
     <footer>价格卡可刷新实时报价；其余为截至 2026-10-02 美股收盘的静态研究快照（财务、做空沿用既有已发布口径），不构成证券研究报告或投资建议。引用链接打开第三方原始页面。</footer>
   </main>
